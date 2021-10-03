@@ -51,4 +51,43 @@ if (userAnswer5.toLowerCase() === 'yes'  || userAnswer5.toLowerCase() === 'y') {
   //console.log(userAnswer5)
 }
 
+for(let i = 4; i >= 1; i-- ) {
+    let correctAnswer = 42;
+    let userAnswer6 = parseInt(prompt('Guess my favorite number'));
+    if(userAnswer6 === correctAnswer) {
+        alert('That\'s right!.');
+        break;
+    } else if (userAnswer6 < correctAnswer) {
+        alert(`Your guess is too low, try again. You have ${(i - 1)} attempts remaining.`);
+    } else if(userAnswer6 > correctAnswer) {
+        alert(`Your guess is too high, try again. You have ${(i - 1)} attempts remaining.`);
+    } if((i) === 1) {
+      alert(`The correct answer was ${correctAnswer}.`)
+      break;
+    }
+}
+
+for (let i = 6; i >= 1; i--) {
+  let userQuestion7 = prompt('What is one of my favorite games?').toLocaleLowerCase();
+  let favGames = ['minecraft', 'pokemon', 'diablo 2', 'mass effect', 'kingdom hearts'];
+  let answeredCorrectly = false;
+  for (let k = 0; k < favGames.length; k++) {
+    if (userQuestion7 === favGames[k]) {
+      alert('Yeah, I love that game!')
+      answeredCorrectly = true;
+    } else if (userQuestion7 !== favGames[k]) {
+      alert(`That ain\'t it cheif, try again. You have ${(i - 1)} attempts remaining.`);
+    }
+    if ((i) === 1) {
+      alert(`The correct answer was ${(favGames[k])}.`)
+      break;
+    }
+  }
+}
+
+
+//let score = 0
+
 alert('Thank you for taking this short quiz ' + userName + '! Please enjoy reading about me down below.')
+
+//Wasn't given enough help to understand the full requirements of the course.

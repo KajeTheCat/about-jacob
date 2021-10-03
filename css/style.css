@@ -4,11 +4,23 @@ h1 {
     margin: auto;
 }
 
+h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: auto;
+}
+
+div {
+    margin: 2rem;
+    text-align: center;
+}
+
 body {
     background-color:rgb(252, 232, 214);
     margin-left: 3rem;
     margin-right: 3rem;
     color: black;
+    font-size: 1.5rem;
 }
 
 footer {
@@ -17,13 +29,10 @@ footer {
 }
 
 img {
-    height: 250px;
-    left: 50%;
-    margin-top: 20px;
-    margin-left: -125px;
-    position:absolute;
-    top: 50%;
-    width: 250px;
+ width: 25rem;
+ height: 25rem;
+ margin: 3rem;
+ margin-left: 45rem;
  }
 
  p {
@@ -31,17 +40,11 @@ img {
     border-style:solid;
     border-color:#31367a;
     padding: 4rem;
+    background-color: lightcyan;
     margin-left: 100px;
     margin-right: 100px;
  }
 
  footer {
-
-    height: 250px;
-    left: 50%;
-    margin-top: 350px;
-    margin-left: -125px;
-    position:absolute;
-    top: 50%;
-    width: 250px;
+    text-align: center;
   }
