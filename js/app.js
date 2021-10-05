@@ -67,24 +67,22 @@ for(let i = 4; i >= 1; i-- ) {
     }
 }
 
-for (let i = 6; i >= 1; i--) {
-  let userQuestion7 = prompt('What is one of my favorite games?').toLocaleLowerCase();
-  let favGames = ['minecraft', 'pokemon', 'diablo 2', 'mass effect', 'kingdom hearts'];
-  let answeredCorrectly = false;
-  for (let k = 0; k < favGames.length; k++) {
-    if (userQuestion7 === favGames[k]) {
-      alert('Yeah, I love that game!')
-      answeredCorrectly = true;
-    } else if (userQuestion7 !== favGames[k]) {
-      alert(`That ain\'t it cheif, try again. You have ${(i - 1)} attempts remaining.`);
-    }
-    if ((i) === 1) {
-      alert(`The correct answer was ${(favGames[k])}.`)
-      break;
+let favGames = ['kingdom hearts','final fantasy','diablo','minecraft','mass effect'];
+let guesses = 0;
+let correct = false;
+for (let k = 6; k > guesses; k--) {
+  let userInput = prompt('What is one of my favorite games?');
+  for (let j = 0; j < favGames.length; j++) {
+    if (userInput.toLowerCase() === favGames[j]) {
+      alert('Bingo!');
+      correct = true;
     }
   }
+  if (!correct) {
+    alert(`You have ${[k - 1]} tries remaining.`);
+  }
+  if (correct) break;
 }
-
 
 //let score = 0
 
