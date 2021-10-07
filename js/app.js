@@ -4,12 +4,35 @@
 
 let score = 0;
 
-let userName = prompt('Hello friend! what is your name?');
+function greeting() {
+  let userName = prompt('Hello friend! what is your name?');
 console.log(userName);
 alert('Hey ' + userName + ' it\'s great to meet you!');
+return userName
+}
+
+let userName = greeting()
+
 
 
 //function questionOne()
+function questionOne(){
+  let userAnswer1 = prompt('Do I own two animals?')
+  if (
+    userAnswer1.toLowerCase() === 'yes' ||
+    userAnswer1.toLowerCase() === 'y'
+  ) {
+    alert('Yeah! A dog named Luca and a cat named Maxamillion!')
+    score++
+  } else {
+    alert(
+      'Actually, I do infact have two! A dog named Luca and a cat named Maxamillion!'
+    )
+    //console.log(userAnswer1)
+  }
+}
+
+questionOne()
 
 let userAnswer1 = prompt('Do I own two animals?');
 if (userAnswer1.toLowerCase() === 'yes'  || userAnswer1.toLowerCase() === 'y') {
