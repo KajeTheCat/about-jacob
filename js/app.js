@@ -20,9 +20,7 @@ function questionOne() {
     alert('Yeah! A dog named Luca and a cat named Maxamillion!')
     score++
   } else {
-    alert(
-      'Actually, I do infact have two! A dog named Luca and a cat named Maxamillion!'
-    )
+    alert('Actually, I do infact have two! A dog named Luca and a cat named Maxamillion!')
     //console.log(userAnswer1)
   }
 }
@@ -116,16 +114,16 @@ function questionSeven() {
 }
 
 let userName = greeting()
-questionOne()
-questionTwo()
-questionThree()
-questionFour()
-questionFive()
-questionSix()
-questionSeven()
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
 
 function ending() {
   alert(`'The total amount you\'ve gotten correct is ${score}'`)
   alert('Thank you for taking this short quiz ' + userName + '! Please enjoy reading about me down below.')
 }
-ending()
+ending();
