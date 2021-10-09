@@ -1,7 +1,5 @@
 'use strict';
 
-//REMINDER: Ensure to invoke js functions in html with ()
-
 let score = 0;
 
 function greeting() {
@@ -11,7 +9,6 @@ function greeting() {
   return userName;
 }
 
-//function questionOne()
 function questionOne() {
   let userAnswer1 = prompt('Do I own two animals?');
   if (
@@ -21,7 +18,6 @@ function questionOne() {
     score++;
   } else {
     alert('Actually, I do infact have two! A dog named Luca and a cat named Maxamillion!');
-    //console.log(userAnswer1)
   }
 }
 
@@ -32,11 +28,9 @@ function questionTwo() {
     score++;
   } else {
     alert('Actually, yes infact I do!');
-    //console.log(userAnswer2)
   }
 }
 
-//function questionThree()
 function questionThree() {
   let userAnswer3 = prompt('Is my favorite color purple?');
   if (userAnswer3.toLowerCase() === 'no' || userAnswer3.toLowerCase() === 'n') {
@@ -44,11 +38,9 @@ function questionThree() {
     score++;
   } else {
     alert('It is a very nice color, however my favorite is Lime green!');
-    //console.log(userAnswer3)
   }
 }
 
-//function questionFour()
 function questionFour() {
   let userAnswer4 = prompt('Do I enjoy tea?');
   if (userAnswer4.toLowerCase() === 'no' || userAnswer4.toLowerCase() === 'n') {
@@ -56,11 +48,9 @@ function questionFour() {
     score++;
   } else {
     alert('Yuck, I cannot stand the taste!');
-    //console.log(userAnswer4)
   }
 }
 
-//function questionFive()
 function questionFive() {
   let userAnswer5 = prompt('Do I prefer computer games over console games?');
   if (userAnswer5.toLowerCase() === 'yes' || userAnswer5.toLowerCase() === 'y') {
@@ -68,11 +58,9 @@ function questionFive() {
     score++;
   } else {
     alert('Console noob, PC master race!');
-    //console.log(userAnswer5)
   }
 }
 
-//function numberGuess()
 function questionSix() {
   for (let i = 4; i >= 1; i--) {
     let correctAnswer = 42;
@@ -92,7 +80,6 @@ function questionSix() {
   }
 }
 
-//function gameGuess()
 function questionSeven() {
   let favGames = ['kingdom hearts', 'final fantasy', 'diablo', 'minecraft', 'mass effect'];
   let guesses = 0;
