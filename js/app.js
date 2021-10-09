@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //REMINDER: Ensure to invoke js functions in html with ()
 
@@ -8,19 +8,19 @@ function greeting() {
   let userName = prompt('Hello friend! what is your name?');
   console.log(userName);
   alert('Hey ' + userName + ' it\'s great to meet you!');
-  return userName
+  return userName;
 }
 
 //function questionOne()
 function questionOne() {
-  let userAnswer1 = prompt('Do I own two animals?')
+  let userAnswer1 = prompt('Do I own two animals?');
   if (
     userAnswer1.toLowerCase() === 'yes' || userAnswer1.toLowerCase() === 'y'
   ) {
-    alert('Yeah! A dog named Luca and a cat named Maxamillion!')
-    score++
+    alert('Yeah! A dog named Luca and a cat named Maxamillion!');
+    score++;
   } else {
-    alert('Actually, I do infact have two! A dog named Luca and a cat named Maxamillion!')
+    alert('Actually, I do infact have two! A dog named Luca and a cat named Maxamillion!');
     //console.log(userAnswer1)
   }
 }
@@ -29,7 +29,7 @@ function questionTwo() {
   let userAnswer2 = prompt('Do I live in Washington?');
   if (userAnswer2.toLowerCase() === 'yes' || userAnswer2.toLowerCase() === 'y') {
     alert('Yeah, I live an hour out from Seattle!');
-    score++
+    score++;
   } else {
     alert('Actually, yes infact I do!');
     //console.log(userAnswer2)
@@ -41,7 +41,7 @@ function questionThree() {
   let userAnswer3 = prompt('Is my favorite color purple?');
   if (userAnswer3.toLowerCase() === 'no' || userAnswer3.toLowerCase() === 'n') {
     alert('You are absolutely right, I prefer Green! lime to be exact.');
-    score++
+    score++;
   } else {
     alert('It is a very nice color, however my favorite is Lime green!');
     //console.log(userAnswer3)
@@ -53,7 +53,7 @@ function questionFour() {
   let userAnswer4 = prompt('Do I enjoy tea?');
   if (userAnswer4.toLowerCase() === 'no' || userAnswer4.toLowerCase() === 'n') {
     alert('Correct! it is a disgusting drink!');
-    score++
+    score++;
   } else {
     alert('Yuck, I cannot stand the taste!');
     //console.log(userAnswer4)
@@ -65,7 +65,7 @@ function questionFive() {
   let userAnswer5 = prompt('Do I prefer computer games over console games?');
   if (userAnswer5.toLowerCase() === 'yes' || userAnswer5.toLowerCase() === 'y') {
     alert('PC master race!');
-    score++
+    score++;
   } else {
     alert('Console noob, PC master race!');
     //console.log(userAnswer5)
@@ -79,14 +79,14 @@ function questionSix() {
     let userAnswer6 = parseInt(prompt('Guess my favorite number between 1 and 50'));
     if (userAnswer6 === correctAnswer) {
       alert('That\'s right!.');
-      score++
+      score++;
       break;
     } else if (userAnswer6 < correctAnswer) {
       alert(`Your guess is too low, try again. You have ${(i - 1)} attempts remaining.`);
     } else if (userAnswer6 > correctAnswer) {
       alert(`Your guess is too high, try again. You have ${(i - 1)} attempts remaining.`);
     } if ((i) === 1) {
-      alert(`The correct answer was ${correctAnswer}.`)
+      alert(`The correct answer was ${correctAnswer}.`);
       break;
     }
   }
@@ -103,17 +103,17 @@ function questionSeven() {
       if (userInput.toLowerCase() === favGames[j]) {
         alert('Bingo!');
         correct = true;
-        score++
+        score++;
       }
     }
     if (!correct) {
       alert(`You have ${[k - 1]} tries remaining.`);
     }
     if (correct) break;
-  } alert(`'possible answers could have been ${favGames}'`)
+  } alert(`'possible answers could have been ${favGames}'`);
 }
 
-let userName = greeting()
+let userName = greeting();
 questionOne();
 questionTwo();
 questionThree();
@@ -123,7 +123,7 @@ questionSix();
 questionSeven();
 
 function ending() {
-  alert(`'The total amount you\'ve gotten correct is ${score}'`)
-  alert('Thank you for taking this short quiz ' + userName + '! Please enjoy reading about me down below.')
+  alert(`'The total amount you've gotten correct is ${score}'`);
+  alert('Thank you for taking this short quiz ' + userName + '! Please enjoy reading about me down below.');
 }
 ending();
